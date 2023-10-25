@@ -81,6 +81,7 @@ body {
 .home {
     background-image: url(img/bg-pattern.png);
     background-size: cover;
+    background-position: center;
     min-height: 100vh;
     margin-top: -6rem;
     padding-top: 15rem;
