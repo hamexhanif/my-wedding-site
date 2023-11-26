@@ -385,7 +385,7 @@ body {
     }
     .timeline li .timeline-panel {
         width: 65%;
-        transform: translateX(-20px);
+        transform: translateX(-10px);
     }
     .timeline li .timeline-panel::before {
         top: 30px;
