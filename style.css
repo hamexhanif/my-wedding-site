@@ -151,6 +151,7 @@ body {
 }
 
 .info .description {
+    padding-top: 1rem;
     font-size: 1rem;
     font-weight: 300;
 }
