@@ -349,6 +349,14 @@ body {
     border: 1px solid var(--pink);
 }
 
+.rsvp .form-check{
+    margin-top: 2.5rem;
+}
+
+.rsvp .button-form{
+    margin-top: 2.5rem;
+}
+
 .rsvp button:hover {
     background-color:white;
     color: var(--pink);
@@ -424,6 +432,12 @@ body {
     .timeline li .timeline-panel::after {
         top: 46px;
     }
+    .rsvp .form-check{
+        margin-top: 2.3rem;
+    }
+    .rsvp .button-form{
+        margin-top: 25px;
+    }
 }
 /* mobile phone */
 @media (max-width: 576px){
@@ -447,5 +461,13 @@ body {
     }
     .timeline li .timeline-panel::after {
         top: 31px;
+    }
+    .rsvp .form-check{
+        margin-top: 7px;
+        transform: translateX(7px);
+    }
+    .rsvp .button-form{
+        margin-top: 7px;
+        transform: translateX(85%);
     }
 }

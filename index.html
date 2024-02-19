@@ -323,7 +323,7 @@
             </div>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="1" id="hadir" name="hadir">
+            <input class="form-check-input" type="checkbox" value="1" id="hadir" name="hadir" disabled>
             <label class="form-check-label" for="hadir">
               Hadir
             </label>
@@ -334,7 +334,7 @@
               Plus One
             </label>
           </div>
-          <div class="col-12" style="margin-top: 35px;">
+          <div class="col-12 button-form">
             <button class="btn btn-primary">Send</button>
           </div>
         </form>
@@ -424,11 +424,22 @@
 
     <script>
 var checkbox = document.getElementById("hadir");
+var nama = document.getElementById("nama");
+
+nama.addEventListener('input', function() {
+  if (this.value) {
+    document.getElementById("hadir").disabled= false;
+  } else {
+    document.getElementById("hadir").checked=false;
+    document.getElementById("hadir").disabled=true;
+  }
+});
 
 checkbox.addEventListener('change', function() {
   if (this.checked) {
     document.getElementById("plusOne").disabled= false;
   } else {
+    document.getElementById("plusOne").checked=false;
     document.getElementById("plusOne").disabled=true;
   }
 });
