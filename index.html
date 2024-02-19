@@ -315,7 +315,7 @@
             <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
           </div>
         </div>
-        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" action="https://script.google.com/macros/s/AKfycbw4OpKnfn2PO90Idrx0CICnPav5-Uw4OQn1x6DoJsgpnzTNbQmqiA035xWP6ZYzJjmf/exec">
+        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" action="https://script.google.com/macros/s/AKfycbw4OpKnfn2PO90Idrx0CICnPav5-Uw4OQn1x6DoJsgpnzTNbQmqiA035xWP6ZYzJjmf/exec" id="my-form">
           <div class="col-12">
             <div class="mb-3">
               <label for="nama" class="form-label">Nama</label>
@@ -323,13 +323,13 @@
             </div>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="hadir" name="hadir">
+            <input class="form-check-input" type="checkbox" value="1" id="hadir" name="hadir">
             <label class="form-check-label" for="hadir">
               Hadir
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="plusOne" name="plusOne">
+            <input class="form-check-input" type="checkbox" value="1" id="plusOne" name="plusOne">
             <label class="form-check-label" for="plusOne">
               Plus One
             </label>
@@ -401,6 +401,25 @@
       if(!localStorage.getItem('opened')){
         disableScroll();
       }
+    </script>
+
+    <script>
+      window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Konfirmasi kehadiran berhasil terkirim!");
+    })
+  });
+});
+
     </script>
 
 
