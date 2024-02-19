@@ -91,7 +91,8 @@ body {
 .home h2,
 .info h2,
 .story h2,
-.gallery h2 { 
+.gallery h2,
+.rsvp h2 { 
     color: var(--pink);
     font-family: 'Sacramento', cursive;
     font-size: 5rem;
@@ -187,7 +188,8 @@ body {
 }
 
 .story,
-.gallery {
+.gallery,
+.rsvp {
     padding-top: 10rem;
     padding-bottom: 8rem;
 }
@@ -203,7 +205,8 @@ body {
 }
 
 .story p,
-.gallery p {
+.gallery p,
+.rsvp p {
     font-size: 1rem;
     font-weight: 300;
 }
@@ -306,6 +309,50 @@ body {
 
 .gallery {
     background-color: #f5f5f5;
+}
+
+.rsvp {
+    background-color: var(--bg);
+}
+
+.rsvp h2 {
+    font-size: 4.5rem;
+}
+
+.rsvp p {
+    color: white;
+}
+
+.rsvp form label {
+    color: white;
+}
+
+.rsvp .form-check {
+    margin-top: 40px;
+}
+
+.rsvp .form-check-input:checked{
+    background-color: var(--pink) !important;
+    border: 0;
+ }
+
+ .rsvp .form-check-input:focus, .label::after, label.form-check-label:focus, .form-check-input::after, .form-check-input:not(:disabled):not(.disabled):active:focus {
+    color: black;
+    outline: 0;
+    border: 0;
+    /* box-shadow: 0 0 0 0.1rem var(--pink) !important; */
+ }
+
+.rsvp button {
+    background-color: var(--pink);
+    color: white;
+    border: 1px solid var(--pink);
+}
+
+.rsvp button:hover {
+    background-color:white;
+    color: var(--pink);
+    border: 1px solid white;
 }
 
 /* Media Query */

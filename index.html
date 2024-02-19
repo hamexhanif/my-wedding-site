@@ -307,6 +307,41 @@
       </div>
     </section>
 
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+          </div>
+        </div>
+        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" action="https://script.google.com/macros/s/AKfycbw4OpKnfn2PO90Idrx0CICnPav5-Uw4OQn1x6DoJsgpnzTNbQmqiA035xWP6ZYzJjmf/exec">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama">
+            </div>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="hadir" name="hadir">
+            <label class="form-check-label" for="hadir">
+              Hadir
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="plusOne" name="plusOne">
+            <label class="form-check-label" for="plusOne">
+              Plus One
+            </label>
+          </div>
+          <div class="col-12" style="margin-top: 35px;">
+            <button class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+
     <script>
       simplyCountdown(".simply-countdown", {
         year: 2024, // required
