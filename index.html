@@ -329,7 +329,7 @@
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="1" id="plusOne" name="plusOne">
+            <input class="form-check-input" type="checkbox" value="1" id="plusOne" name="plusOne" disabled>
             <label class="form-check-label" for="plusOne">
               Plus One
             </label>
@@ -422,6 +422,19 @@
 
     </script>
 
+    <script>
+var checkbox = document.getElementById("hadir");
+
+checkbox.addEventListener('change', function() {
+  if (this.checked) {
+    document.getElementById("plusOne").disabled= false;
+  } else {
+    document.getElementById("plusOne").disabled=true;
+  }
+});
+
+    </script>
+    
 
   </body>
 </html>
