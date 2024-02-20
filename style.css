@@ -494,4 +494,8 @@ footer .bi-instagram:hover{
         margin-top: 7px;
         transform: translateX(85%);
     }
+    footer small{
+        padding: 1.5em;
+        font-size: small;
+    }
 }
