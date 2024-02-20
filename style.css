@@ -469,8 +469,9 @@ footer .bi-instagram:hover{
         font-size: 60%;
     }
     .simply-countdown>.simply-section {
-        padding: 45px;
-        margin: 3px;
+        padding: 40px;
+        margin: 5px;
+        /* transform: translateX(50%); */
     }
     .timeline li .timeline-image {
         width: 80px;
@@ -497,5 +498,14 @@ footer .bi-instagram:hover{
     footer small{
         padding: 1.5em;
         font-size: small;
+    }
+}
+
+@media (max-width: 390px){
+    .simply-countdown>.simply-section {
+        padding: 60px;
+        margin: 5px;
+        transform: translateX(50%);
+        font-size: medium;
     }
 }
