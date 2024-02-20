@@ -363,6 +363,30 @@ body {
     border: 1px solid white;
 }
 
+footer {
+    padding: 3rem;
+    background-color: var(--pink);
+    color: white;
+}
+
+footer a{
+    font-weight: bold;
+    color: var(--bg);
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: white;
+}
+
+footer .bi{
+    color: var(--bg);
+}
+
+footer .bi-instagram:hover{
+    color: white;
+}
+
 /* Media Query */
 /* Extra Large */
 @media (max-width: 1200px){

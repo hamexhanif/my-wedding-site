@@ -82,7 +82,6 @@
               <a class="nav-link" href="#story">Story</a>
               <a class="nav-link" href="#gallery">Gallery</a>
               <a class="nav-link" href="#rsvp">RSVP</a>
-              <a class="nav-link" href="#gifts">Gifts</a>
             </div>
           </div>
         </div>
@@ -342,6 +341,17 @@
 
     </section>
 
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2024 Hana Wedding. All Rights Reserved.</small>
+            <small class="block">Made with <i class="bi bi-heart-fill"></i> by <a href="https://www.instagram.com/hamexhanif/"><i class="bi bi-instagram"></i> hamexhanif</a></small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script>
       simplyCountdown(".simply-countdown", {
         year: 2024, // required
@@ -432,6 +442,7 @@ nama.addEventListener('input', function() {
   } else {
     document.getElementById("hadir").checked=false;
     document.getElementById("hadir").disabled=true;
+    document.getElementById("plusOne").disabled=true;
   }
 });
 
