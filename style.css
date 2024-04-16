@@ -1,5 +1,5 @@
 :root {
-  --pink: #f14e95;
+  --pink: #F6A192;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -387,6 +387,19 @@ footer .bi-instagram:hover{
     color: white;
 }
 
+.audio-icon-wrapper{
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+}
+
 /* Media Query */
 /* Extra Large */
 @media (max-width: 1200px){
@@ -462,6 +475,11 @@ footer .bi-instagram:hover{
     .rsvp .button-form{
         margin-top: 25px;
     }
+    .audio-icon-wrapper{
+        width: 5rem;
+        height: 5rem;
+        font-size: 5rem;
+    }
 }
 /* mobile phone */
 @media (max-width: 576px){
@@ -472,6 +490,9 @@ footer .bi-instagram:hover{
         padding: 40px;
         margin: 5px;
         /* transform: translateX(50%); */
+    }
+    .sticky-top {
+        overflow: hidden;
     }
     .timeline li .timeline-image {
         width: 80px;
@@ -499,13 +520,26 @@ footer .bi-instagram:hover{
         padding: 1.5em;
         font-size: small;
     }
+    .audio-icon-wrapper{
+        width: 7rem;
+        height: 7rem;
+        font-size: 7rem;
+    }
 }
 
-@media (max-width: 390px){
+/* @media (max-width: 390px){
     .simply-countdown>.simply-section {
         padding: 60px;
         margin: 5px;
         transform: translateX(50%);
         font-size: medium;
     }
-}
+    .sticky-top {
+        overflow: hidden;
+    }
+    .audio-icon-wrapper{
+        width: 5rem;
+        height: 5rem;
+        font-size: 5rem;
+    }
+} */

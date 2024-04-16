@@ -25,58 +25,62 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="style.css" />
-  </head>
 
+    <!-- Flickity Gallery -->
+    <link rel="stylesheet" href="flickity\flickity.min.css">
+  </head>
+  
   <body>
     <section
-      id="hero"
-      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    id="hero"
+    class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
-        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h4>Kepada <span>udin</span></h4>
         <h1>Anna & Hanif</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
-        <div class="simply-countdown justify-content-center"></div>
+        <div class="simply-countdown justify-content-center"></div>        
+        
         <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
       </main>
     </section>
-
+    
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
     ></script>
-
+    
     <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top mynavbar">
       <div class="container">
-        <a class="navbar-brand" href="#">NaHa</a>
+        <a class="navbar-brand" href="#">A&H</a>
         <button
-          class="navbar-toggler border-0"
-          type="button"
+        class="navbar-toggler border-0"
+        type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
-        >
+          >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
-          <div class="offcanvas-header">
+        <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NaHa</h5>
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="navbar-nav ms-auto">
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="navbar-nav ms-auto">
               <a class="nav-link" href="#home">Home</a>
               <a class="nav-link" href="#info">Info</a>
               <a class="nav-link" href="#story">Story</a>
@@ -94,7 +98,7 @@
           <div class="col-md-8 text-center">
             <h2>Acara Pernikahan</h2>
             <h3>Diselenggarakan pada 11 Mei 2024 di Bogor, Jawa Barat</h3>
-            <p>Oleh karena itu, dengan segala hormat kami bermaksud untuk mengundang Bapak/Ibu/Saudara/i untuk hadir pada acara pernikahan kami</p>
+            <p>Dengan segala hormat kami bermaksud untuk mengundang <span>udin</span> untuk hadir pada acara pernikahan kami</p>
           </div>
         </div>
         <div class="row couple">
@@ -102,8 +106,8 @@
             <div class="row">
               <div class="col-8 text-end">
                 <h3>Anna Nadia Febrina Yahya</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis ipsam accusantium, dignissimos quaerat molestias.</p>
-                <p>Putri dari Bpk. Muhamad Yahya <br> dan <br> Ibu Rina Rahayu Utami</p>
+                <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis ipsam accusantium, dignissimos quaerat molestias.</p>-->
+                <p>Putri dari Bapak Muhamad Yahya <br> dan <br> Ibu Rina Rahayu Utami</p>
               </div>
               <div class="col-4">
                 <img src="img/anna.png" alt="Anna Nadia Febrina Yahya" class="img-responsive rounded-circle">
@@ -118,8 +122,8 @@
               </div>
               <div class="col-8">
                 <h3>Muhammad Hanif Amrullah Fakhruddin</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis ipsam accusantium, dignissimos quaerat molestias.</p>
-                <p>Putra dari Bpk. Suroso Yulianto <br> dan <br> Ibu Sinta Sari Purwaningrum</p>
+                <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis ipsam accusantium, dignissimos quaerat molestias.</p>-->
+                <p>Putra dari Bapak Suroso Yulianto <br> dan <br> Ibu Sinta Sari Purwaningrum</p>
               </div>
             </div>
           </div>
@@ -173,7 +177,7 @@
                 <div class="row justify-content-center">
                   <div class="col-md-6 my-3">
                     <i class="bi bi-clock d-block"></i>
-                    <span>11.00 - 14.00</span>
+                    <span>11.00 - 13.00</span>
                   </div>
                   <div class="col-md-6 my-3">
                     <i class="bi bi-calendar3 d-block"></i>
@@ -201,7 +205,7 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam assumenda necessitatibus aut voluptatem at. Praesentium.</p>
           </div>
         </div>
-
+        
         <div class="row">
           <div class="col">
             <ul class="timeline">
@@ -270,7 +274,39 @@
           </div>
           
         </div>
-
+        
+        <!-- Flickity HTML init -->
+<div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true }'>
+  <!-- images from unsplash.com -->
+  <div class="carousel-cell">
+    <img src="img/gallery/foto_PIK.jpg" alt="Foto Anna & Hanif di PIK">
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
+  </div>
+</div>
+<!-- 
         <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 justify-content-center">
           <div class="col mt-3">
             <a href="img/gallery/foto_PIK.jpg" data-toggle="lightbox" data-caption="Foto Anna & Hanif di PIK" data-gallery="galeri">
@@ -303,6 +339,7 @@
             </a>
           </div>
         </div>
+-->
       </div>
     </section>
 
@@ -322,7 +359,7 @@
             </div>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="1" id="hadir" name="hadir" disabled>
+            <input class="form-check-input" type="checkbox" value="1" id="hadir" name="hadir">
             <label class="form-check-label" for="hadir">
               Hadir
             </label>
@@ -340,7 +377,7 @@
       </div>
 
     </section>
-
+    
     <footer>
       <div class="container">
         <div class="row">
@@ -351,6 +388,18 @@
         </div>
       </div>
     </footer>
+
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/safeNsound.mp3" type="audio/mp3">
+        
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none;">
+        <!-- <i class="bi bi-play-circle-fill"></i> -->
+        <i class="bi bi-pause-circle"></i>
+      </div>
+
+    </div>
 
     <script>
       simplyCountdown(".simply-countdown", {
@@ -373,7 +422,8 @@
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
-
+    <script src="flickity\flickity.pkgd.min.js"></script>
+    
     <script>
       const stickyTop = document.querySelector('.sticky-top');
       const offcanvas = document.querySelector('.offcanvas');
@@ -390,6 +440,11 @@
     
     <script>
       const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+      const song = document.querySelector('#song');
+      const audioIcon = document.querySelector('.audio-icon-wrapper i');
+
+      let isPlaying = false;
 
       function disableScroll(){
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -405,12 +460,34 @@
       function enableScroll(){
         window.onscroll = function(){}
         rootElement.style.scrollBehavior = 'smooth';
-        localStorage.setItem('opened', 'true');
+        //localStorage.setItem('opened', 'true');
+        playAudio();
       }
 
-      if(!localStorage.getItem('opened')){
-        disableScroll();
+      function playAudio(){
+        song.volume = 0.1;
+        audioIconWrapper.style.display = 'flex';
+        song.play();
+        isPlaying = true;
       }
+
+      audioIconWrapper.onclick = function() {
+        if(isPlaying){
+          song.pause();
+          audioIcon.classList.add('bi-play-circle');
+          audioIcon.classList.remove('bi-pause-circle');
+        } else {
+          song.play();
+          audioIcon.classList.remove('bi-play-circle');
+          audioIcon.classList.add('bi-pause-circle');
+        }
+
+        isPlaying = !isPlaying;
+      }
+
+      //if(!localStorage.getItem('opened')){
+        disableScroll();
+      //}
     </script>
 
     <script>
@@ -433,19 +510,19 @@
     </script>
 
     <script>
-var checkbox = document.getElementById("hadir");
-var nama = document.getElementById("nama");
-
-nama.addEventListener('input', function() {
-  if (this.value) {
-    document.getElementById("hadir").disabled= false;
-  } else {
-    document.getElementById("hadir").checked=false;
-    document.getElementById("plusOne").checked=false;
-    document.getElementById("hadir").disabled=true;
-    document.getElementById("plusOne").disabled=true;
-  }
-});
+    var checkbox = document.getElementById("hadir");
+    var nama = document.getElementById("nama");
+    
+    nama.addEventListener('input', function() {
+      if (this.value) {
+        document.getElementById("hadir").disabled= false;
+      } else {
+        document.getElementById("hadir").checked=false;
+        document.getElementById("plusOne").checked=false;
+        document.getElementById("hadir").disabled=true;
+        document.getElementById("plusOne").disabled=true;
+      }
+    });
 
 checkbox.addEventListener('change', function() {
   if (this.checked) {
@@ -457,7 +534,37 @@ checkbox.addEventListener('change', function() {
 });
 
     </script>
-    
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      console.log(urlParams.get('a'));
+      const anrede = urlParams.get('a') || 'Bapak/Ibu/Saudara/i';
+      const guestName = urlParams.get('n') || '';
+      const nameContainer = document.querySelector('.hero h4 span');
+      nameContainer.innerText = `${anrede} ${guestName},`.replace(/ ,$/, ',');
+      const namaContainer = document.querySelector('.home p span');
+      namaContainer.innerText = `${anrede} ${guestName},`.replace(/ ,$/, ',');
 
-  </body>
+      document.querySelector('#nama').value = guestName;
+      // document.addEventListener('DOMContentLoaded', function () {
+        //   // Function to get URL parameters
+        //   function getParameterByName(name, url) {
+          //         if (!url) url = window.location.href;
+        //         name = name.replace(/[\[\]]/g, '\\$&');
+        //         var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        //             results = regex.exec(url);
+        //         if (!results) return null;
+        //         if (!results[2]) return '';
+        //         return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        //       }
+
+        //     // Get guest names from URL or use default values
+        //     var guestName = getParameterByName('to') || 'Hanif';
+
+        //     // Update the content with the names
+        //     document.getElementById('guestName').innerText = guestName;
+        //     document.getElementById('namaTamu').innerText = guestName;
+        //     document.getElementById('nama').innerText = guestName;
+        //   });
+        </script>
+</body>
 </html>
