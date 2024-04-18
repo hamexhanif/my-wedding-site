@@ -10,6 +10,51 @@ body {
     min-height: 4000px;
 }
 
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h4, h1, p, .simply-countdown, .btn {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+h4 {
+    animation: fadeIn 0.5s ease forwards 0.5s, slideInFromTop 1s ease-out forwards;
+}
+
+h1 {
+    animation: fadeIn 0.5s ease forwards 1s, slideInFromTop 1s ease-out forwards;
+}
+
+p {
+    animation: fadeIn 0.5s ease forwards 1.5s, slideInFromTop 1s ease-out forwards;
+}
+
+.simply-countdown {
+    animation: fadeIn 0.5s ease forwards 2s, slideInFromTop 1s ease-out forwards;
+}
+
+.btn {
+    animation: fadeIn 0.5s ease forwards 2.5s, slideInFromTop 1s ease-out forwards;
+}
+
 .hero::before{
     content: '';
     position: absolute;
@@ -491,9 +536,9 @@ footer .bi-instagram:hover{
         margin: 5px;
         /* transform: translateX(50%); */
     }
-    .sticky-top {
+    /* .sticky-top {
         overflow: hidden;
-    }
+    } */
     .timeline li .timeline-image {
         width: 80px;
         height: 80px;
