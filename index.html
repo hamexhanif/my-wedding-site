@@ -95,7 +95,7 @@
     <section id="home" class="home">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
+          <div id="home-text" class="col-md-8 text-center hidden">
             <h2>Acara Pernikahan</h2>
             <h3>Diselenggarakan pada 11 Mei 2024 di Bogor, Jawa Barat</h3>
             <p>Dengan segala hormat kami bermaksud untuk mengundang <span>udin</span> untuk hadir pada acara pernikahan kami</p>
@@ -280,31 +280,31 @@
 <div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true }'>
   <!-- images from unsplash.com -->
   <div class="carousel-cell">
-    <img src="img/gallery/foto_PIK.jpg" alt="Foto Anna & Hanif di PIK">
+    <img src="img/gallery/foto_PIK.jpg" alt="Foto Anna & Hanif di PIK" class="max-image-size">
   </div>
   <div class="carousel-cell">
-    <img src="img/gallery/foto_depan_kelas.jpg" alt="Foto Anna & Hanif di depan kelas" />
+    <img src="img/gallery/foto_depan_kelas.jpg" alt="Foto Anna & Hanif di depan kelas" class="max-image-size"/>
   </div>
   <div class="carousel-cell">
-    <img src="img/gallery/foto_futsal.jpg" alt="Foto Anna & Hanif pasca SPL" />
+    <img src="img/gallery/foto_futsal.jpg" alt="Foto Anna & Hanif pasca SPL" class="max-image-size"/>
   </div>
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" class="max-image-size"/>
   </div>
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" class="max-image-size"/>
   </div>
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" class="max-image-size"/>
   </div>
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" class="max-image-size"/>
   </div>
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" class="max-image-size"/>
   </div>
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" class="max-image-size"/>
   </div>
 </div>
 <!-- 
@@ -408,7 +408,7 @@
         month: 5, // required
         day: 11, // required
         hours: 8, // Default is 0 [0-23] integer
-        minutes: 0, // Default is 0 [0-59] integer
+        minutes: 30, // Default is 0 [0-59] integer
         seconds: 0, // Default is 0 [0-59] integer
         words: {
           //words displayed into the countdown
@@ -567,5 +567,34 @@ checkbox.addEventListener('change', function() {
         //     document.getElementById('nama').innerText = guestName;
         //   });
         </script>
+
+<script>
+  // Function to handle scroll event
+  function handleScroll() {
+      const section = document.getElementById("home-text");
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      const fullyVisible = rect.top >= 0 && rect.bottom <= windowHeight;
+
+      // Calculate the opacity based on the distance of the section from the viewport
+      const opacity = fullyVisible ? 1 : Math.max(0, 1 - (rect.top + windowHeight) / (windowHeight * 1.5));
+
+      // Apply the opacity to the section
+      section.style.opacity = opacity;
+
+      // If the section is fully visible, remove the hidden class
+      if (fullyVisible) {
+          section.classList.remove("hidden");
+      } else {
+          section.classList.add("hidden");
+      }
+  }
+
+  // Add event listener to trigger handleScroll function on scroll
+  window.addEventListener("scroll", handleScroll);
+
+  // Call handleScroll initially to check if section is in viewport on page load
+  handleScroll();
+</script>
 </body>
 </html>

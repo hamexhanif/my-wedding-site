@@ -123,6 +123,11 @@ p {
     text-transform: uppercase;
 }
 
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
 .home {
     background-image: url(img/bg-pattern.png);
     background-size: cover;
@@ -254,6 +259,11 @@ p {
 .rsvp p {
     font-size: 1rem;
     font-weight: 300;
+}
+
+.gallery .carousel-cell .max-image-size{
+    width: 100%;
+    max-width: 600px;
 }
 
 .timeline {
@@ -572,7 +582,7 @@ footer .bi-instagram:hover{
     }
 }
 
-/* @media (max-width: 390px){
+@media (max-width: 390px){
     .simply-countdown>.simply-section {
         padding: 60px;
         margin: 5px;
@@ -587,4 +597,4 @@ footer .bi-instagram:hover{
         height: 5rem;
         font-size: 5rem;
     }
-} */
+}
