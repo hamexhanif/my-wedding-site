@@ -28,6 +28,11 @@
 
     <!-- Flickity Gallery -->
     <link rel="stylesheet" href="flickity\flickity.min.css">
+
+    <!-- AoS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="my-wedding-site\aos\aos.css" > -->
+    <!-- <script src="my-wedding-site\aos\aos.js"></script> -->
   </head>
   
   <body>
@@ -36,12 +41,19 @@
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
-        <h4>Kepada <span>udin</span></h4>
-        <h1>Anna & Hanif</h1>
-        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
-        <div class="simply-countdown justify-content-center"></div>        
-        
-        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
+        <div data-aos="fade-up">
+          <h4>Kepada <span>udin</span></h4>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <h1>Anna & Hanif</h1>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        </div>
+        <div  data-aos="zoom-out" data-aos-delay="300" class="simply-countdown justify-content-center"></div>        
+        <div data-aos="zoom-in" data-aos-delay="400">
+          <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
+        </div>
       </main>
     </section>
     
@@ -95,21 +107,21 @@
     <section id="home" class="home">
       <div class="container">
         <div class="row justify-content-center">
-          <div id="home-text" class="col-md-8 text-center hidden">
-            <h2>Acara Pernikahan</h2>
-            <h3>Diselenggarakan pada 11 Mei 2024 di Bogor, Jawa Barat</h3>
-            <p>Dengan segala hormat kami bermaksud untuk mengundang <span>udin</span> untuk hadir pada acara pernikahan kami</p>
+          <div id="home-text" class="col-md-8 text-center">
+            <div data-aos="fade-up"><h2>Acara Pernikahan</h2></div>
+            <div data-aos="fade-down" data-aos-delay="100"><h3>Diselenggarakan pada 11 Mei 2024 di Bogor, Jawa Barat</h3></div>
+            <div data-aos="fade-down" data-aos-delay="200"><p>Dengan segala hormat kami bermaksud untuk mengundang <span>udin</span> untuk hadir pada acara pernikahan kami</p></div>
           </div>
         </div>
         <div class="row couple">
           <div class="col-lg-6">
             <div class="row">
               <div class="col-8 text-end">
-                <h3>Anna Nadia Febrina Yahya</h3>
+                <div data-aos="fade-right"><h3>Anna Nadia Febrina Yahya</h3></div>
                 <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis ipsam accusantium, dignissimos quaerat molestias.</p>-->
-                <p>Putri dari Bapak Muhamad Yahya <br> dan <br> Ibu Rina Rahayu Utami</p>
+                <div data-aos="fade-right" data-aos-delay="100"><p>Putri dari Bapak Muhamad Yahya <br> dan <br> Ibu Rina Rahayu Utami</p></div>
               </div>
-              <div class="col-4">
+              <div data-aos="fade-right" class="col-4">
                 <img src="img/anna.png" alt="Anna Nadia Febrina Yahya" class="img-responsive rounded-circle">
               </div>
             </div>
@@ -117,13 +129,13 @@
           <span class="heart"><i class="bi bi-heart-fill"></i></span>
           <div class="col-lg-6">
             <div class="row">
-              <div class="col-4">
+              <div data-aos="fade-left" class="col-4">
                 <img src="img/hanif.png" alt="Muhammad Hanif Amrullah Fakhruddin" class="img-responsive rounded-circle">
               </div>
               <div class="col-8">
-                <h3>Muhammad Hanif Amrullah Fakhruddin</h3>
+                <div data-aos="fade-left"><h3>Muhammad Hanif Amrullah Fakhruddin</h3></div>
                 <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis ipsam accusantium, dignissimos quaerat molestias.</p>-->
-                <p>Putra dari Bapak Suroso Yulianto <br> dan <br> Ibu Sinta Sari Purwaningrum</p>
+                <div data-aos="fade-left" data-aos-delay="100"><p>Putra dari Bapak Suroso Yulianto <br> dan <br> Ibu Sinta Sari Purwaningrum</p></div>
               </div>
             </div>
           </div>
@@ -135,18 +147,18 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Informasi Acara</h2>
-            <p class="alamat">Alamat: Harmony Banquet Halls. <br>Yasmin Centre, Jl. KH R. Abdullah Bin Nuh, Bogor</p>
+            <div data-aos="fade-down"><h2>Informasi Acara</h2></div>
+            <div data-aos="fade-up"><p class="alamat">Alamat: Harmony Banquet Halls. <br>Yasmin Centre, Jl. KH R. Abdullah Bin Nuh, Bogor</p></div>
             <div class="google-map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15854.826350185083!2d106.7704117!3d-6.5586742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c48c0e27cb95%3A0xd09b1ba0957655e6!2sHarmony%20Banquet%20Halls!5e0!3m2!1sen!2sde!4v1704404191310!5m2!1sen!2sde" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>            
             <!-- <a href="https://maps.app.goo.gl/jQMHUHQS5aGMeHCd8" target="_blank" class="btn btn-light btn-sm my-3">Buka peta</a> -->
-            <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Bila tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal atau tempat</p>
+            <div data-aos="slide-up" data-aos-duration="750"><p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Bila tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal atau tempat</p></div>
           </div> 
         </div>
 
         <div class="row justify-content-center mt-4">
-          <div class="col-md-5 col-10">
+          <div data-aos="fade-right" class="col-md-5 col-10">
             <div class="card text-center text-bg-light mb-4">
               <div class="card-header">
                 Akad Nikah
@@ -168,7 +180,7 @@
               </div> -->
             </div>
           </div>
-          <div class="col-md-5 col-10">
+          <div data-aos="fade-left" class="col-md-5 col-10">
             <div class="card text-center text-bg-light">
               <div class="card-header">
                 Resepsi
@@ -568,7 +580,7 @@ checkbox.addEventListener('change', function() {
         //   });
         </script>
 
-<script>
+<!-- <script>
   // Function to handle scroll event
   function handleScroll() {
       const section = document.getElementById("home-text");
@@ -594,7 +606,17 @@ checkbox.addEventListener('change', function() {
   window.addEventListener("scroll", handleScroll);
 
   // Call handleScroll initially to check if section is in viewport on page load
-  handleScroll();
+  handleScroll(); -->
+<!-- </script> -->
+
+<!-- <script>
+  AOS.init();
+</script> -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+  })
 </script>
 </body>
 </html>
