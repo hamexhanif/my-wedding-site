@@ -586,8 +586,8 @@ footer .bi-instagram:hover{
         padding-bottom: 4rem;
     }
 
-    p {
-        font-size: 500%;
+    .home .foto-surat img {
+        max-width: 200px;
     }
 
     .info,
@@ -602,16 +602,12 @@ footer .bi-instagram:hover{
     }
 
     html{
-        font-size: 60%;
+        font-size: 75%;
     }
     .simply-countdown>.simply-section {
         padding: 40px;
         margin: 5px;
-        /* transform: translateX(50%); */
     }
-    /* .sticky-top {
-        overflow: hidden;
-    } */
     .timeline li .timeline-image {
         width: 80px;
         height: 80px;
@@ -661,6 +657,30 @@ footer .bi-instagram:hover{
         position: absolute;
         max-width: 75%;    
     }
+    .info .col-helper {
+        max-width: 0px;
+    }
+    .info .col-mei {
+        max-width: 106.2px;
+    }
+    .info .col-date {
+        max-width: 151px !important;
+    }
+    .info .date-style-whole{
+        font-size: 4rem;
+    }
+    .info .date-style {
+        font-size: 2.5rem;
+    }
+    .footer {
+        font-size: 60% !important;
+    }
+    .row-full {
+        width: 115%;
+        transform: translateX(-5%);
+    }
+
+
 }
 
 @media (max-width: 390px){
@@ -671,9 +691,8 @@ footer .bi-instagram:hover{
         padding-top: 2rem;
         padding-bottom: 1rem;
     }
-
-    p {
-        font-size: 150%;
+    html{
+        font-size: 75%;
     }
     
     .simply-countdown>.simply-section {
@@ -689,5 +708,8 @@ footer .bi-instagram:hover{
         width: 5rem;
         height: 5rem;
         font-size: 5rem;
+    }
+    footer {
+        font-size: 60% !important;
     }
 }
