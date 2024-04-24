@@ -156,6 +156,7 @@ html, body {
 
 .info .alamat {
     font-size: 1.1rem;
+    padding-top: 1.5rem;
 }
 
 .info .description {
@@ -198,7 +199,7 @@ html, body {
 }
 
 .info .card-body {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
@@ -244,6 +245,10 @@ html, body {
 .info .tgl {
     font-family: "Playfair Display", serif;
     font-weight: bold;
+}
+
+.info .col-date .row{
+    max-height: fit-content !important;
 }
 
 .story,
@@ -546,7 +551,7 @@ footer .bi-instagram:hover{
         overflow: hidden;
     }
     .info .card-body {
-        font-size: 1.9rem;
+        font-size: 1.3rem;
     }
     .timeline li .timeline-image {
         width: 140px;
@@ -645,7 +650,7 @@ footer .bi-instagram:hover{
     }
 
     .info .card-body {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .info #gif-bird {
@@ -688,6 +693,9 @@ footer .bi-instagram:hover{
 }
 
 @media (max-width: 390px){
+    .hero h1{
+        font-size: 5rem;
+    }
     .home,
     .info,
     .gallery,
@@ -705,7 +713,7 @@ footer .bi-instagram:hover{
     }
     
     .simply-countdown>.simply-section {
-        padding: 60px;
+        padding: 55px;
         margin: 5px;
         transform: translateX(50%);
         font-size: medium;
