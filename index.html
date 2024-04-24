@@ -165,11 +165,11 @@
               </div>
               <div class="card-body">
                 <div class="row justify-content-center">
-                  <div class="col-md-6 my-3">
+                  <div data-aos="zoom-out-right" class="col-md-6 my-3">
                     <i class="bi bi-clock d-block"></i>
                     <span>08.30 - 10.00</span>
                   </div>
-                  <div class="col-md-6 my-3">
+                  <div data-aos="zoom-out-right" class="col-md-6 my-3">
                     <i class="bi bi-calendar3 d-block"></i>
                     <span>Sabtu, 11 Mei 2024</span>
                   </div>
@@ -187,11 +187,11 @@
               </div>
               <div class="card-body">
                 <div class="row justify-content-center">
-                  <div class="col-md-6 my-3">
+                  <div data-aos="zoom-out-left" class="col-md-6 my-3">
                     <i class="bi bi-clock d-block"></i>
                     <span>11.00 - 13.00</span>
                   </div>
-                  <div class="col-md-6 my-3">
+                  <div data-aos="zoom-out-left" class="col-md-6 my-3">
                     <i class="bi bi-calendar3 d-block"></i>
                     <span>Sabtu, 11 Mei 2024</span>
                   </div>
@@ -281,9 +281,9 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <span>Memori Kami</span>
-            <h2>Galeri Foto</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, quaerat.</p>
+            <div data-aos="fade-up" data-aos-delay="150"><span>Memori Kami</span></div>
+            <div data-aos="fade-down"><h2>Galeri Foto</h2></div>
+            <div data-aos="fade-up" data-aos-delay="100"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, quaerat.</p></div>
           </div>
           
         </div>
@@ -360,33 +360,61 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Konfirmasi Kehadiran</h2>
-            <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+            <div data-aos="fade-down"><h2>Konfirmasi Kehadiran</h2></div>
+            <div data-aos="fade-up"><p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p></div>
           </div>
         </div>
         <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" action="https://script.google.com/macros/s/AKfycbw4OpKnfn2PO90Idrx0CICnPav5-Uw4OQn1x6DoJsgpnzTNbQmqiA035xWP6ZYzJjmf/exec" id="my-form">
           <div class="col-12">
-            <div class="mb-3">
+            <div data-aos="fade-right" class="mb-3">
               <label for="nama" class="form-label">Nama</label>
               <input type="text" class="form-control" id="nama" name="nama">
             </div>
           </div>
-          <div class="form-check">
+          <div data-aos="fade-right" data-aos-delay="100" class="form-check">
             <input class="form-check-input" type="checkbox" value="1" id="hadir" name="hadir">
             <label class="form-check-label" for="hadir">
               Hadir
             </label>
           </div>
-          <div class="form-check">
+          <div data-aos="fade-right" data-aos-delay="200" class="form-check">
             <input class="form-check-input" type="checkbox" value="1" id="plusOne" name="plusOne" disabled>
             <label class="form-check-label" for="plusOne">
               Plus One
             </label>
           </div>
-          <div class="col-12 button-form">
+          <div data-aos="fade-right" data-aos-delay="300" class="col-12 button-form">
             <button class="btn btn-primary">Send</button>
           </div>
         </form>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">          
+            <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://hana-wedding-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+          </div>
+        </div>
+
+
       </div>
 
     </section>
@@ -404,7 +432,7 @@
 
     <div id="audio-container">
       <audio id="song" autoplay loop>
-        <source src="audio/safeNsound.mp3" type="audio/mp3">
+        <source src="audio/song.mp3" type="audio/mp3">
         
       </audio>
       <div class="audio-icon-wrapper" style="display: none;">
@@ -478,7 +506,7 @@
       }
 
       function playAudio(){
-        song.volume = 0.1;
+        song.volume = 0.3;
         audioIconWrapper.style.display = 'flex';
         song.play();
         isPlaying = true;

@@ -225,7 +225,7 @@ p {
 .info .card-header {
     /* color: var(--pink); */
     font-family: 'Sacramento', cursive;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     /* font-weight: bold; */
     border-bottom: 1px solid #999;
     /* text-transform: uppercase; */
@@ -233,7 +233,7 @@ p {
 }
 
 .info .card-body {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .story,
