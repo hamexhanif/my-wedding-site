@@ -580,15 +580,24 @@ footer .bi-instagram:hover{
 /* mobile phone */
 @media (max-width: 576px){
     .home{
-        padding-bottom: 0;
+        padding-bottom: 4rem;
+    }
+
+    p {
+        font-size: 500%;
     }
 
     .info,
     .gallery,
     .rsvp {
-        padding-top: 8rem;
+        padding-top: 6rem;
         padding-bottom: 4rem;
     }
+
+    .rsvp .form-check {
+        padding-left: 2.5rem;
+    }
+
     html{
         font-size: 60%;
     }
@@ -658,6 +667,10 @@ footer .bi-instagram:hover{
     .rsvp {
         padding-top: 2rem;
         padding-bottom: 1rem;
+    }
+
+    p {
+        font-size: 150%;
     }
     
     .simply-countdown>.simply-section {
