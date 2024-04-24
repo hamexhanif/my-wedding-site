@@ -178,9 +178,9 @@ html, body {
 }
 
 .info .card {
-    background-color: rgba(255, 255, 255, 0.2) !important;
+    background-color: rgba(244, 255, 28, 0.2) !important;
     color: white !important;
-    border: 1px solid #999;
+    border: 0px solid #fbffe8;
 }
 
 .info .card-header {
@@ -188,13 +188,14 @@ html, body {
     font-family: 'Sacramento', cursive;
     font-size: 2.75rem;
     /* font-weight: bold; */
-    border-bottom: 1px solid #999;
+    border-bottom: 2px solid #bca5ba;
     /* text-transform: uppercase; */
     letter-spacing: 0.1rem;
 }
 
 .info .card-body {
-    font-size: 2rem;
+    font-size: 2.25rem;
+    font-weight: 300;
 }
 
 
