@@ -541,6 +541,9 @@ footer .bi-instagram:hover{
     .sticky-top {
         overflow: hidden;
     }
+    .info .card-body {
+        font-size: 1.9rem;
+    }
     .timeline li .timeline-image {
         width: 140px;
         height: 140px;
