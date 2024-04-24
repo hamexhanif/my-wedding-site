@@ -10,50 +10,10 @@ body {
     min-height: 4000px;
 }
 
-/* @keyframes slideInFromTop {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-h4, h1, p, .simply-countdown, .btn {
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-h4 {
-    animation: fadeIn 0.5s ease forwards 0.5s, slideInFromTop 1s ease-out forwards;
-}
-
-h1 {
-    animation: fadeIn 0.5s ease forwards 1s, slideInFromTop 1s ease-out forwards;
-}
-
-p {
-    animation: fadeIn 0.5s ease forwards 1.5s, slideInFromTop 1s ease-out forwards;
-}
-
-.simply-countdown {
-    animation: fadeIn 0.5s ease forwards 2s, slideInFromTop 1s ease-out forwards;
-}
-
-.btn {
-    animation: fadeIn 0.5s ease forwards 2.5s, slideInFromTop 1s ease-out forwards;
-} */
 
 .hero::before{
     content: '';
@@ -137,7 +97,8 @@ p {
 .info h2,
 .story h2,
 .gallery h2,
-.rsvp h2 { 
+.rsvp h2,
+.message h2 { 
     color: var(--pink);
     font-family: 'Sacramento', cursive;
     font-size: 5rem;
@@ -187,9 +148,9 @@ p {
 }
 
 .info{
-    background-color: var(--bg);
+    background-color: #bca5ba;
     color: white;
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 8rem;
 }
 
@@ -233,7 +194,51 @@ p {
 }
 
 .info .card-body {
-    font-size: 1.25rem;
+    font-size: 2rem;
+}
+
+
+.info #gif-bird {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    transform: translate(-800px) scale(1.25)
+
+}
+
+.info #gif-bird2 {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    transform: translate(600px) scale(1.25)
+
+}
+
+.info .date-style-whole{
+    font-family: 'Sacramento', cursive;
+    font-size: 5rem;
+    padding: 3rem;
+    padding-top: 1rem;
+}
+
+.info .date-style {
+    /* background-color: #0a0a0a; */
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 3.5rem;
+    transform: translateY(85%);
+    width: 100%;
+    font-weight: 600;
+}
+
+.info .tgl {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
 }
 
 .story,
@@ -255,14 +260,23 @@ p {
 
 .story p,
 .gallery p,
-.rsvp p {
+.rsvp p,
+.message p {
     font-size: 1rem;
     font-weight: 300;
 }
 
-.gallery .carousel-cell .max-image-size{
+/* .gallery .carousel-cell .max-image-size{
     width: 100%;
     max-width: 600px;
+} */
+.gallery .overlay {
+    transition: 0.3s ease;
+}
+
+.gallery .overlay:hover {
+    filter: brightness(70%);
+    transform: scale(1.03);
 }
 
 .timeline {
@@ -367,6 +381,8 @@ p {
 
 .rsvp {
     background-color: var(--bg);
+    padding-bottom: 2rem;
+    padding-top: 3rem;
 }
 
 .rsvp h2 {
@@ -415,6 +431,17 @@ p {
     background-color:white;
     color: var(--pink);
     border: 1px solid white;
+}
+
+.message {
+    padding-top: 4rem;
+    background-color: rgb(255, 247, 234);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.message p {
+    color: gray;
 }
 
 footer {
@@ -534,9 +561,33 @@ footer .bi-instagram:hover{
         height: 5rem;
         font-size: 5rem;
     }
+
+    .info #gif-bird {
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        transform: translate(-600px) scale(1);    
+    }
+    
+    .info #gif-bird2 {
+        transform: translate(200px, 100px) scale(0.75) scaleX(-1);
+        height: auto;
+        position: absolute;
+        max-width: 25%;    
+    }
 }
 /* mobile phone */
 @media (max-width: 576px){
+    .home{
+        padding-bottom: 0;
+    }
+
+    .info,
+    .gallery,
+    .rsvp {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
     html{
         font-size: 60%;
     }
@@ -579,9 +630,35 @@ footer .bi-instagram:hover{
         height: 7rem;
         font-size: 7rem;
     }
+
+    .info .card-body {
+        font-size: 1.5rem;
+    }
+
+    .info #gif-bird {
+        max-width: 75%;
+        height: auto;
+        position: absolute;
+        transform: translate(-200px, 0) scale(1.25);    
+    }
+    
+    .info #gif-bird2 {
+        transform: translate(-60px, 250px) scale(0.75) scaleX(-1);
+        height: auto;
+        position: absolute;
+        max-width: 75%;    
+    }
 }
 
 @media (max-width: 390px){
+    .home,
+    .info,
+    .gallery,
+    .rsvp {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    
     .simply-countdown>.simply-section {
         padding: 60px;
         margin: 5px;
