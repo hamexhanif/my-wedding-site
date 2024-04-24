@@ -565,9 +565,9 @@ footer .bi-instagram:hover{
         margin-top: 25px;
     }
     .audio-icon-wrapper{
-        width: 5rem;
-        height: 5rem;
-        font-size: 5rem;
+        width: 7rem;
+        height: 7rem;
+        font-size: 7rem;
     }
 
     .info #gif-bird {
@@ -639,9 +639,9 @@ footer .bi-instagram:hover{
         font-size: small;
     }
     .audio-icon-wrapper{
-        width: 7rem;
-        height: 7rem;
-        font-size: 7rem;
+        width: 5rem;
+        height: 5rem;
+        font-size: 5rem;
     }
 
     .info .card-body {
@@ -698,6 +698,11 @@ footer .bi-instagram:hover{
     html{
         font-size: 75%;
     }
+
+    .home .foto-surat img {
+        padding-top: 70px;
+        max-width: 200px;
+    }
     
     .simply-countdown>.simply-section {
         padding: 60px;
@@ -709,11 +714,12 @@ footer .bi-instagram:hover{
         overflow: hidden;
     }
     .audio-icon-wrapper{
-        width: 5rem;
-        height: 5rem;
-        font-size: 5rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 3rem;
     }
-    footer {
-        font-size: 60% !important;
+    .row-full {
+        width: 120%;
+        transform: translateX(-5%);
     }
 }
