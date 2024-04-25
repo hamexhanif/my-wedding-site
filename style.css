@@ -605,9 +605,6 @@ footer .bi-instagram:hover{
 }
 /* mobile phone */
 @media (max-width: 576px){
-    .hero {
-        background-size: 20%;
-    }
     .home{
         padding-bottom: 4rem;
     }
