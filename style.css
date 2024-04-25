@@ -6,7 +6,7 @@
 
 body {
     font-size: 1.2rem;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     min-height: 4000px;
 }
 
@@ -22,7 +22,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/bg-prewed.jpg);
+    background-image: url(img/hero_compressed.jpg);
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -40,7 +40,7 @@ html, body {
 }
 
 .hero h1{
-    font-family: 'Sacramento', cursive;
+    font-family: "Corinthia", cursive;
     font-size: 6rem;
 }
 
@@ -74,9 +74,9 @@ html, body {
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title{
-    font-family: 'Sacramento', cursive;
+    font-family: "Dynalight", cursive;
     font-size: 3.2rem;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .mynavbar .nav-link{
@@ -100,9 +100,13 @@ html, body {
 .rsvp h2,
 .message h2 { 
     color: var(--pink);
-    font-family: 'Sacramento', cursive;
+    font-family: "Corinthia", cursive;
     font-size: 5rem;
     font-weight: bold;
+}
+
+.info h2 {
+    color: #eddbba;
 }
 
 .home h3 { 
@@ -121,7 +125,7 @@ html, body {
 }
 
 .home .couple h3 {
-    font-family: 'Sacramento', cursive;
+    font-family: "Corinthia", cursive;
     font-size: 2.4rem;
     color: var(--pink);
 }
@@ -147,6 +151,11 @@ html, body {
     color: var(--pink);
 }
 
+.home .foto-surat img {
+    border-radius: 10px;
+    max-width: 300px;
+}
+
 .info{
     background-color: #bca5ba;
     color: white;
@@ -155,7 +164,7 @@ html, body {
 }
 
 .info .alamat {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding-top: 1.5rem;
 }
 
@@ -188,7 +197,7 @@ html, body {
 
 .info .card-header {
     /* color: var(--pink); */
-    font-family: 'Sacramento', cursive;
+    font-family: "Corinthia", cursive;
     font-size: 2.75rem;
     /* font-weight: bold; */
     border-bottom: 0.3rem solid #bca5ba;
@@ -221,7 +230,7 @@ html, body {
 }
 
 .info .date-style-whole{
-    font-family: 'Sacramento', cursive;
+    font-family: "Corinthia", cursive;
     font-size: 5rem;
     padding: 3rem;
     padding-top: 1rem;
@@ -390,13 +399,14 @@ html, body {
 }
 
 .rsvp {
-    background-color: var(--bg);
+    background-color: #bca5ba;
     padding-bottom: 2rem;
     padding-top: 3rem;
 }
 
 .rsvp h2 {
     font-size: 4.5rem;
+    color: #eddbba;
 }
 
 .rsvp p {
@@ -412,8 +422,7 @@ html, body {
 }
 
 .rsvp .form-check-input:checked{
-    background-color: var(--pink) !important;
-    border: 0;
+    background-color: #eddbba
  }
 
  .rsvp .form-check-input:focus, .label::after, label.form-check-label:focus, .form-check-input::after, .form-check-input:not(:disabled):not(.disabled):active:focus {
@@ -424,9 +433,9 @@ html, body {
  }
 
 .rsvp button {
-    background-color: var(--pink);
+    background-color: #eddbba;
     color: white;
-    border: 1px solid var(--pink);
+    border: 1px solid #eddbba;
 }
 
 .rsvp .form-check{
@@ -439,7 +448,7 @@ html, body {
 
 .rsvp button:hover {
     background-color:white;
-    color: var(--pink);
+    color: #eddbba;
     border: 1px solid white;
 }
 
@@ -452,6 +461,11 @@ html, body {
 
 .message p {
     color: gray;
+}
+
+.message .ttd {
+    font-size: 1.3rem;
+    /* font-weight: bold; */
 }
 
 footer {
@@ -591,6 +605,9 @@ footer .bi-instagram:hover{
 }
 /* mobile phone */
 @media (max-width: 576px){
+    .hero {
+        background-size: 20%;
+    }
     .home{
         padding-bottom: 4rem;
     }
@@ -650,7 +667,7 @@ footer .bi-instagram:hover{
     }
 
     .info .card-body {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .info #gif-bird {

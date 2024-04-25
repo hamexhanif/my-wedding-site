@@ -10,6 +10,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,23 +18,19 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Dancing+Script:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Ephesis&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dynalight&display=swap" rel="stylesheet">  
     <!-- simplyCountdown -->
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
     <script src="countdown/simplyCountdown.min.js"></script>
-
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
     <link rel="stylesheet" href="style.css" />
-
     <!-- Flickity Gallery -->
     <link rel="stylesheet" href="flickity\flickity.min.css">
-
     <!-- AoS Library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- <link rel="stylesheet" href="my-wedding-site\aos\aos.css" > -->
-    <!-- <script src="my-wedding-site\aos\aos.js"></script> -->
   </head>
   
   <body>
@@ -49,18 +46,21 @@
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
-        <div data-aos="fade-up">
-          <h4>Kepada <span>udin</span></h4>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <h4>The Wedding of</h4>
         </div>
         <div data-aos="fade-up" data-aos-delay="100">
           <h1>Anna & Hanif</h1>
         </div>
         <div data-aos="fade-up" data-aos-delay="200">
-          <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+          <p>Akan melangsungkan pernikahan dalam:</p>
         </div>
         <div  data-aos="zoom-out" data-aos-delay="300" class="simply-countdown justify-content-center"></div>        
+        <div data-aos="fade-up" class="mt-2">
+          <p>Kepada Yth. <span>udin</span></p>
+        </div>
         <div data-aos="zoom-in" data-aos-delay="400">
-          <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
+          <a href="#home" class="btn btn-lg mt-2" onclick="enableScroll()">Lihat Undangan</a>
         </div>
       </main>
     </section>
@@ -116,7 +116,7 @@
       <div class="container">
         <div class="row justify-content-center align-center">
           <div class="col col-auto foto-surat">
-            <img src="https://placehold.jp/300x450.png">
+            <img src="img/foto_surat.jpg">
           </div>
         </div>
         <div class="row justify-content-center text-center mt-4">
@@ -169,7 +169,7 @@
           <div class="col-md-8 col-10 text-center">
             <div data-aos="fade-down"><h2 style="color: #eddbba;">Wedding Event</h2></div>
             <div data-aos="fade-right"><img id="gif-bird" src="img\gif\bird-silhouette.gif"></div>
-            <div data-aos="fade-up"><p class="alamat">Harmony Banquet Halls. <br>Yasmin Centre, Jl. KH R. Abdullah Bin Nuh, Bogor</p></div>
+            <div data-aos="fade-up"><p class="alamat">Harmony Banquet Halls <br>Yasmin Centre, Jl. KH R. Abdullah Bin Nuh, Kota Bogor</p></div>
             <div data-aos="zoom-out" class="google-map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15854.826350185083!2d106.7704117!3d-6.5586742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c48c0e27cb95%3A0xd09b1ba0957655e6!2sHarmony%20Banquet%20Halls!5e0!3m2!1sen!2sde!4v1704404191310!5m2!1sen!2sde" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -260,72 +260,127 @@
           <div class="col-md-8 col-10 text-center">
             <div data-aos="fade-up" data-aos-delay="150"><span>Our Memory</span></div>
             <div data-aos="fade-down"><h2>Gallery</h2></div>
-            <div data-aos="fade-up" data-aos-delay="100"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, quaerat.</p></div>
           </div>
-          
         </div>
-        
-        <!-- Flickity HTML init -->
-<!-- <div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true }'>
-  <!-- images from unsplash.com 
-  <div class="carousel-cell">
-    <img src="img/gallery/foto_PIK.jpg" alt="Foto Anna & Hanif di PIK" class="max-image-size">
-  </div>
-  <div class="carousel-cell">
-    <img src="img/gallery/foto_depan_kelas.jpg" alt="Foto Anna & Hanif di depan kelas" class="max-image-size"/>
-  </div>
-  <div class="carousel-cell">
-    <img src="img/gallery/foto_futsal.jpg" alt="Foto Anna & Hanif pasca SPL" class="max-image-size"/>
-  </div>
-  <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" class="max-image-size"/>
-  </div>
-  <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" class="max-image-size"/>
-  </div>
-  <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" class="max-image-size"/>
-  </div>
-  <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" class="max-image-size"/>
-  </div>
-  <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" class="max-image-size"/>
-  </div>
-  <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" class="max-image-size"/>
-  </div>
-</div> -->
-
-        <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 justify-content-center image">
-          <div data-aos="flip-up" data-aos-duration="1500" class="col mt-3">
-            <a href="img/gallery/foto_PIK.jpg" data-toggle="lightbox" data-caption="Foto Anna & Hanif di PIK" data-gallery="galeri">
-              <img src="img/gallery/thumbnail/foto_PIK.jpg" alt="Foto Anna & Hanif di PIK" class="img-fluid w-100 rounded overlay">
+        <div class="row row-cols-3 justify-content-center image">
+          <div data-aos="flip-up" data-aos-duration="1500" class="col col-4 mt-3">
+            <a href="img/gallery/senderan.jpg" data-toggle="lightbox" data-caption="Foto Anna & Hanif di PIK" data-gallery="galeri">
+              <img src="img/gallery/senderan.jpg" alt="Foto Anna & Hanif di PIK" class="img-fluid h-100 rounded overlay">
             </a>
           </div>
-          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="200" class="col mt-3">
-            <a href="https://picsum.photos/id/7/1200/770" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
-              <img src="https://picsum.photos/id/7/400/530" alt="Random Photo from Picsum" class="img-fluid w-100 rounded overlay">
+          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="200" class="col col-8 mt-3">
+            <a href="img/gallery/atas_kayu.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/atas_kayu.jpg" alt="Random Photo from Picsum" class="img-fluid rounded overlay" style="width: 100%; height: auto;">
             </a>
           </div>
-          <div data-aos="flip-up" data-aos-duration="1500" data-aos-delay="400" class="col mt-3">
-            <a href="https://picsum.photos/id/19/1200/770" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
-              <img src="https://picsum.photos/id/19/400/531" alt="Random Photo from Picsum" class="img-fluid w-100 rounded overlay">
+          <div data-aos="flip-up" data-aos-duration="1500" data-aos-delay="400" class="col col-8 mt-3">
+            <a href="img/gallery/kaki.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/kaki.jpg" alt="Random Photo from Picsum" class="img-fluid w-100 rounded overlay">
             </a>
           </div>
-          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="600" class="col mt-3">
-            <a href="https://picsum.photos/id/22/1200/770" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri"> 
-              <img src="https://picsum.photos/id/22/400/532" alt="Random Photo from Picsum" class="img-fluid w-100 rounded overlay">
+          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="600" class="col  col-4 mt-3">
+            <a href="img/gallery/lari.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri"> 
+              <img src="img/gallery/lari.jpg" alt="Random Photo from Picsum" class="img-fluid h-100 rounded overlay">
             </a>
           </div>
-          <div data-aos="flip-up" data-aos-duration="1500" class="col mt-3">
-            <a href="https://picsum.photos/id/11/1200/770" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
-              <img src="https://picsum.photos/id/11/400/533" alt="Random Photo from Picsum" class="img-fluid w-100 rounded overlay">
+          <div data-aos="flip-up" data-aos-duration="1500" class="col col-4 mt-3">
+            <a href="img/gallery/belakangin.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/belakangin.jpg" alt="Random Photo from Picsum" class="img-fluid h-100 rounded overlay">
             </a>
           </div>
-          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="200" class="col mt-3">
-            <a href="https://picsum.photos/id/78/1200/770" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
-              <img src="https://picsum.photos/id/78/400/529" alt="Random Photo from Picsum" class="img-fluid w-100 rounded overlay">
+          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="200" class="col col-4 mt-3">
+            <a href="img/gallery/ngintip.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/ngintip.jpg" alt="Random Photo from Picsum" class="img-fluid h-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="200" class="col col-4 mt-3">
+            <a href="img/gallery/jalan_panjang.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/jalan_panjang.jpg" alt="Random Photo from Picsum" class="img-fluid h-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1500" class="col col-4 mt-3">
+            <a href="img/gallery/bunga_pantat.jpg" data-toggle="lightbox" data-caption="Foto Anna & Hanif di PIK" data-gallery="galeri">
+              <img src="img/gallery/bunga_pantat.jpg" alt="Foto Anna & Hanif di PIK" class="img-fluid h-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="200" class="col col-8 mt-3">
+            <a href="img/gallery/jalan_panjang2.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/jalan_panjang2.jpg" alt="Random Photo from Picsum" class="img-fluid w-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1500" data-aos-delay="400" class="col col-8 mt-3">
+            <a href="img/gallery/jalan_panjang3.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/jalan_panjang3.jpg" alt="Random Photo from Picsum" class="img-fluid w-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="600" class="col  col-4 mt-3">
+            <a href="img/gallery/jalan_panjang4.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri"> 
+              <img src="img/gallery/jalan_panjang4.jpg" alt="Random Photo from Picsum" class="img-fluid h-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="200" class="col col-4 mt-3">
+            <a href="img/gallery/puun.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/puun.jpg" alt="Random Photo from Picsum" class="img-fluid h-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="200" class="col col-4 mt-3">
+            <a href="img/gallery/pockcam.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/pockcam.jpg" alt="Random Photo from Picsum" class="img-fluid h-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1500" class="col col-4 mt-3">
+            <a href="img/gallery/puun2.jpg" data-toggle="lightbox" data-caption="Foto Anna & Hanif di PIK" data-gallery="galeri">
+              <img src="img/gallery/puun2.jpg" alt="Foto Anna & Hanif di PIK" class="img-fluid h-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1500" class="col col-4 mt-3">
+            <a href="img/gallery/belakangin2.jpg" data-toggle="lightbox" data-caption="Foto Anna & Hanif di PIK" data-gallery="galeri">
+              <img src="img/gallery/belakangin2.jpg" alt="Foto Anna & Hanif di PIK" class="img-fluid h-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="200" class="col col-8 mt-3">
+            <a href="img/gallery/pockcam2.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/pockcam2.jpg" alt="Random Photo from Picsum" class="img-fluid rounded overlay" style="width: 100%; height: auto;">
+            </a>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1500" data-aos-delay="400" class="col col-8 mt-3">
+            <a href="img/gallery/pockcam3.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/pockcam3.jpg" alt="Random Photo from Picsum" class="img-fluid w-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="600" class="col  col-4 mt-3">
+            <a href="img/gallery/belakangin3.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri"> 
+              <img src="img/gallery/belakangin3.jpg" alt="Random Photo from Picsum" class="img-fluid h-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1500" class="col col-4 mt-3">
+            <a href="img/gallery/duduk_weh.jpg" data-toggle="lightbox" data-caption="Foto Anna & Hanif di PIK" data-gallery="galeri">
+              <img src="img/gallery/duduk_weh.jpg" alt="Foto Anna & Hanif di PIK" class="img-fluid h-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="200" class="col col-8 mt-3">
+            <a href="img/gallery/ucing.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/ucing.jpg" alt="Random Photo from Picsum" class="img-fluid rounded overlay" style="width: 100%; height: auto;">
+            </a>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1500" data-aos-delay="400" class="col col-8 mt-3">
+            <a href="img/gallery/soimut.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/soimut.jpg" alt="Random Photo from Picsum" class="img-fluid w-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="600" class="col  col-4 mt-3">
+            <a href="img/gallery/lelah.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri"> 
+              <img src="img/gallery/lelah.jpg" alt="Random Photo from Picsum" class="img-fluid h-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="1500" class="col col-4 mt-3">
+            <a href="img/gallery/kaki2.jpg" data-toggle="lightbox" data-caption="Foto Anna & Hanif di PIK" data-gallery="galeri">
+              <img src="img/gallery/kaki2.jpg" alt="Foto Anna & Hanif di PIK" class="img-fluid h-100 rounded overlay">
+            </a>
+          </div>
+          <div data-aos="flip-down" data-aos-duration="1500" data-aos-delay="200" class="col col-8 mt-3">
+            <a href="img/gallery/ayang.jpg" data-toggle="lightbox" data-caption="Random Photo from Picsum" data-gallery="galeri">
+              <img src="img/gallery/ayang.jpg" alt="Random Photo from Picsum" class="img-fluid rounded overlay" style="width: 100%; height: auto;">
             </a>
           </div>
         </div>
@@ -348,63 +403,68 @@
               <input type="text" class="form-control" id="nama" name="nama">
             </div>
           </div>
-          <!-- <div data-aos="fade-right" data-aos-delay="100" class="form-check">
-            <input class="form-check-input" type="checkbox" value="1" id="hadir" name="hadir">
-            <label class="form-check-label" for="hadir">
-              Hadir
-            </label>
-          </div> -->
           <div data-aos="fade-right" data-aos-delay="100" class="form-group" style="transform: translateY(-5%);">
+            <label for="hadir" class="form-group-label" style="transform: translateY(-20%);">
+              Konfirmasi Kehadiran
+            </label>
+            <select class="form-control" id="hadir" name="hadir">
+              <option value="1">Hadir</option>
+              <option value="0">Tidak Hadir</option>
+            </select>
+          </div>
+          <div data-aos="fade-right" data-aos-delay="200" class="form-group" style="transform: translateY(-5%);">
             <label for="plusOne" class="form-group-label" style="transform: translateY(-20%);">
-              Guest Number
+              Jumlah Tamu
             </label>
             <select class="form-control" id="plusOne" name="plusOne">
-              <option value="0">0</option>
+              <option value="0">-</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
               <option value="5">5</option>
             </select>
-            <!-- <input class="form-check-input" type="checkbox" value="1" id="plusOne" name="plusOne" disabled> -->
-          </div>>
-          <div data-aos="fade-right" data-aos-delay="200" class="col-12 button-form">
-            <button class="btn btn-primary">Send</button>
+          </div>
+          <div data-aos="fade-right" data-aos-delay="300" class="col-12 button-form">
+            <button class="btn btn-primary" style="transform: translateY(-3%);">Send</button>
           </div>
         </form>
     </section>
+
     <section id="message" class="message">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div data-aos="fade-down" style="text-align: center;"><h2>Wishes and Prayer</h2></div>
-            <div data-aos="fade-up" style="text-align: center;"><p>Kirimkan Doa & Ucapan Untuk Kedua Mempelai</p></div>          
-            <div data-aos="zoom-in" id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = 11052024; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://hana-wedding-1.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
+        <div class="row justify-content-center text-center">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-6">          
+              <div data-aos="fade-down" style="text-align: center;" class="mt-2"><h2>Wishes and Prayer</h2></div>
+              <div data-aos="fade-up" style="text-align: center;"><p>Kirimkan doa & ucapan untuk kedua mempelai</p></div>          
+              <div data-aos="zoom-in" id="disqus_thread"></div>
+  <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = 11052024; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://hana-wedding-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+          </div>
+          <div class="row justify-content-center text-center">
+            <div style="text-align: center;" class="row col justify-content-center text-center col-md-6 mt-2"><p>Menjadi sebuah kebahagiaan bagi kami apabila <span>udin</span> berkenan hadir di hari bahagia kami. Terima kasih atas segala ucapan, doa, dan perhatian yang diberikan.</p></div>
+          </div>
+          <div class="row justify-content-center text-center">
+            <div data-aos-delay="100" class="ttd mt-2 justify-content-center text-center ttd mb-2">Anna & Hanif</div>
           </div>
         </div>
-
-
-      </div>
-
     </section>
     
     <footer>
@@ -568,66 +628,15 @@ checkbox.addEventListener('change', function() {
       console.log(urlParams.get('a'));
       const anrede = urlParams.get('a') || 'Bapak/Ibu/Saudara/i';
       const guestName = urlParams.get('n') || '';
-      const nameContainer = document.querySelector('.hero h4 span');
-      nameContainer.innerText = `${anrede} ${guestName},`.replace(/ ,$/, ',');
+      const nameContainer = document.querySelector('.hero p span');
+      nameContainer.innerText = `${anrede} ${guestName}`.replace(/ ,$/, ',');
       const namaContainer = document.querySelector('.home p span');
-      namaContainer.innerText = `${anrede} ${guestName},`.replace(/ ,$/, ',');
+      namaContainer.innerText = `${anrede} ${guestName}`.replace(/ ,$/, ',');
+      const namenContainer = document.querySelector('.message p span');
+      namenContainer.innerText = `${anrede} ${guestName}`.replace(/ ,$/, ',');
 
       document.querySelector('#nama').value = guestName;
-      // document.addEventListener('DOMContentLoaded', function () {
-        //   // Function to get URL parameters
-        //   function getParameterByName(name, url) {
-          //         if (!url) url = window.location.href;
-        //         name = name.replace(/[\[\]]/g, '\\$&');
-        //         var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        //             results = regex.exec(url);
-        //         if (!results) return null;
-        //         if (!results[2]) return '';
-        //         return decodeURIComponent(results[2].replace(/\+/g, ' '));
-        //       }
-
-        //     // Get guest names from URL or use default values
-        //     var guestName = getParameterByName('to') || 'Hanif';
-
-        //     // Update the content with the names
-        //     document.getElementById('guestName').innerText = guestName;
-        //     document.getElementById('namaTamu').innerText = guestName;
-        //     document.getElementById('nama').innerText = guestName;
-        //   });
         </script>
-
-<!-- <script>
-  // Function to handle scroll event
-  function handleScroll() {
-      const section = document.getElementById("home-text");
-      const rect = section.getBoundingClientRect();
-      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-      const fullyVisible = rect.top >= 0 && rect.bottom <= windowHeight;
-
-      // Calculate the opacity based on the distance of the section from the viewport
-      const opacity = fullyVisible ? 1 : Math.max(0, 1 - (rect.top + windowHeight) / (windowHeight * 1.5));
-
-      // Apply the opacity to the section
-      section.style.opacity = opacity;
-
-      // If the section is fully visible, remove the hidden class
-      if (fullyVisible) {
-          section.classList.remove("hidden");
-      } else {
-          section.classList.add("hidden");
-      }
-  }
-
-  // Add event listener to trigger handleScroll function on scroll
-  window.addEventListener("scroll", handleScroll);
-
-  // Call handleScroll initially to check if section is in viewport on page load
-  handleScroll(); -->
-<!-- </script> -->
-
-<!-- <script>
-  AOS.init();
-</script> -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init({
