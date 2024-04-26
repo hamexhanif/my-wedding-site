@@ -326,9 +326,16 @@
               <option value="Tidak Hadir">Tidak Hadir</option>
             </select>
           </div>
-          <div data-aos="fade-right" class="mb-3">
-            <label for="plusOne" class="form-label">Jumlah Tamu</label>
-            <input type="text" class="form-control" id="plusOne" name="plusOne">
+          <div data-aos="fade-right" data-aos-delay="200" class="form-group" style="transform: translateY(-5%);">
+            <label for="plusOne" class="form-group-label" style="transform: translateY(-20%);">
+              Jumlah Tamu
+            </label>
+            <select class="form-control" id="plusOne" name="plusOne">
+              <option value="0">-</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
           </div>
           <div data-aos="fade-right" data-aos-delay="300" class="col-12 button-form">
             <button class="btn btn-primary" style="transform: translateY(-3%);">Send</button>
@@ -505,7 +512,7 @@
 
     </script>
 
-    <script>
+    <!-- <script>
     var checkbox = document.getElementById("hadir");
     var nama = document.getElementById("nama");
     
@@ -529,7 +536,7 @@ checkbox.addEventListener('change', function() {
   }
 });
 
-    </script>
+    </script> -->
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       console.log(urlParams.get('a'));
