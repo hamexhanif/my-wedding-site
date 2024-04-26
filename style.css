@@ -818,9 +818,9 @@ footer .bi-instagram:hover{
     }
     
     .simply-countdown>.simply-section {
-        padding: 55px;
+        padding: 60px;
         margin: 5px;
-        transform: translateX(50%);
+        transform: translateX(45%);
         font-size: medium;
     }
     .sticky-top {
