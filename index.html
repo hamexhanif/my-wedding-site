@@ -413,10 +413,14 @@
       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
       
       var disqus_config = function () {
-      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = 11052024; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-      };
-      
+        this.page.url = 'https://www.annahanifwedding.com/?a={salutation}&n={name}&thread_id=11052024';
+        this.page.identifier = getThreadIdentifier();
+    };
+    function getThreadIdentifier() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var threadId = urlParams.get('thread_id');
+        return threadId || '11052024'; // default thread identifier
+    }
       (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
       s.src = 'https://hana-wedding-1.disqus.com/embed.js';
