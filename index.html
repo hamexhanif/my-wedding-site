@@ -314,21 +314,21 @@
           <div class="col-12">
             <div data-aos="fade-right" class="mb-3">
               <label for="nama" class="form-label">Nama</label>
-              <input type="text" class="form-control" id="nama" name="nama">
+              <input type="text" class="form-control" id="nama" name="nama" required>
             </div>
           </div>
           <div class="form-group" style="transform: translateY(-5%);">
             <label for="hadir" class="form-group-label" style="transform: translateY(-20%);">
               Konfirmasi Kehadiran
             </label>
-            <select class="form-control" id="hadir" name="hadir">
+            <select class="form-control" id="hadir" name="hadir" required>
               <option value="Hadir">Hadir</option>
               <option value="Tidak Hadir">Tidak Hadir</option>
             </select>
           </div>
           <div data-aos="fade-right" data-aos-delay="100" class="mb-3">
             <label for="plusOne" class="form-label">Jumlah Tamu</label>
-            <input type="text" class="form-control" id="plusOne" name="plusOne">
+            <input type="number" class="form-control" min="0" id="plusOne" name="plusOne" required>
           </div>
           <div data-aos="fade-right" data-aos-delay="200" class="col-12 button-form" style="transform: translateY(-7%);">
             <button class="btn btn-primary">Send</button>
@@ -535,14 +535,14 @@ checkbox.addEventListener('change', function() {
       console.log(urlParams.get('a'));
       const anrede = urlParams.get('a') || '';
       const guestName = urlParams.get('n') || '';
-      const nameContainer = document.querySelector('.hero p span, .home p span, .message p span');
+      const nameContainer = document.querySelector('.hero p span');
       nameContainer.innerText = `${anrede} ${guestName}`.replace(/ ,$/, ',');
       const namaContainer = document.querySelector('.home p span');
       namaContainer.innerText = `${anrede} ${guestName}`.replace(/ ,$/, ',');
       const namenContainer = document.querySelector('.message p span');
       namenContainer.innerText = `${anrede} ${guestName}`.replace(/ ,$/, ',');
 
-      document.querySelector('#nama').value = guestName;
+      // document.querySelector('#nama').value = guestName;
         </script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
