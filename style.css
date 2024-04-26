@@ -345,10 +345,9 @@ p {
     font-weight: 300;
 }
 
-/* .gallery .carousel-cell .max-image-size{
-    width: 100%;
-    max-width: 600px;
-} */
+.gallery a{
+    max-width: 100%;
+}
 .gallery .overlay {
     transition: 0.3s ease;
 }
