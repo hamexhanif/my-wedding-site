@@ -50,7 +50,7 @@
         </div>
         <div class="simply-countdown justify-content-center"></div>        
         <div class="mt-2">
-          <p>Kepada Yth. <span>udin</span></p>
+          <p>Kepada Yth. <br><span>udin</span></p>
         </div>
         <div>
           <a href="#home" class="btn btn-lg mt-2" onclick="enableScroll()">Lihat Undangan</a>
@@ -600,7 +600,7 @@ checkbox.addEventListener('change', function() {
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       console.log(urlParams.get('a'));
-      const anrede = urlParams.get('a') || 'Bapak/Ibu/Saudara/i';
+      const anrede = urlParams.get('a') || '';
       const guestName = urlParams.get('n') || '';
       const nameContainer = document.querySelector('.hero p span, .home p span, .message p span');
       nameContainer.innerText = `${anrede} ${guestName}`.replace(/ ,$/, ',');
