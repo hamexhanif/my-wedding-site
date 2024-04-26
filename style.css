@@ -180,6 +180,10 @@ html, body {
     max-width: 300px;
 }
 
+.home .the-wedding {
+    padding-top: 5rem;
+}
+
 .info{
     background-color: #bca5ba;
     color: white;
