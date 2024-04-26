@@ -653,11 +653,12 @@ footer .bi-instagram:hover{
 /* mobile phone */
 @media (max-width: 576px){
     .home{
+        padding-top: 6.5rem;
         padding-bottom: 4rem;
     }
 
     .home .foto-surat img {
-        max-width: 200px;
+        max-width: 275px;
     }
     .home .couple {
         margin-top: 2rem;
@@ -666,7 +667,7 @@ footer .bi-instagram:hover{
     .info,
     .gallery,
     .rsvp {
-        padding-top: 6rem;
+        padding-top: 4rem;
         padding-bottom: 4rem;
     }
 
