@@ -63,6 +63,30 @@ html, body {
     color: white;
 }
 
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn {
+    animation: fadeIn 0.5s ease forwards 3s, slideInFromBottom 1s ease-out forwards;
+}
+
 .mynavbar{
     background-color: rgba(255, 255, 255, 0.5) !important;
     backdrop-filter: blur(4px);
