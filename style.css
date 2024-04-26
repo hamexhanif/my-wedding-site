@@ -636,6 +636,9 @@ footer .bi-instagram:hover{
     .home .foto-surat img {
         max-width: 200px;
     }
+    .home .couple {
+        margin-top: 2rem;
+    }
 
     .info,
     .gallery,
