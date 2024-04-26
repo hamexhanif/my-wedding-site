@@ -862,3 +862,17 @@ footer .bi-instagram:hover{
         transform: translateX(-5%);
     }
 }
+@media (max-width: 330px){
+    .simply-countdown>.simply-section {
+        padding: 50px;
+        margin: 5px;
+        /* transform: translateX(20%); */
+        font-size: medium;
+    }
+    .info .date-style-whole{
+        font-size: 3rem;
+    }
+    .info .date-style {
+        font-size: 2rem;
+    }
+}
