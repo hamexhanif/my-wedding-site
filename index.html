@@ -39,17 +39,17 @@
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
-        <div data-aos="fade-up" data-aos-delay="100">
+        <div>
           <h4>The Wedding of</h4>
         </div>
-        <div data-aos="fade-up" data-aos-delay="100">
+        <div>
           <h1>Anna & Hanif</h1>
         </div>
-        <div data-aos="fade-up" data-aos-delay="200">
+        <div>
           <p>Akan melangsungkan pernikahan dalam:</p>
         </div>
-        <div  data-aos="zoom-out" data-aos-delay="300" class="simply-countdown justify-content-center"></div>        
-        <div data-aos="fade-up" class="mt-2">
+        <div class="simply-countdown justify-content-center"></div>        
+        <div class="mt-2">
           <p>Kepada Yth. <span>udin</span></p>
         </div>
         <div>
@@ -415,6 +415,7 @@
       var disqus_config = function () {
         this.page.url = 'https://www.annahanifwedding.com/?a={salutation}&n={name}&thread_id=11052024';
         this.page.identifier = getThreadIdentifier();
+        this.page.title = 'Leave us a message here!';
     };
     function getThreadIdentifier() {
         var urlParams = new URLSearchParams(window.location.search);

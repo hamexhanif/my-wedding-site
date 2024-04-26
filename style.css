@@ -63,6 +63,17 @@ html, body {
     color: white;
 }
 
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 @keyframes slideInFromBottom {
     0% {
         transform: translateY(100%);
@@ -81,6 +92,27 @@ html, body {
     100% {
         opacity: 1;
     }
+}
+
+h4, h1, p, .simply-countdown, .btn {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+h4 {
+    animation: fadeIn 0.5s ease forwards 0.5s, slideInFromTop 1s ease-out forwards;
+}
+
+h1 {
+    animation: fadeIn 0.5s ease forwards 1s, slideInFromTop 1s ease-out forwards;
+}
+
+p {
+    animation: fadeIn 0.5s ease forwards 1.5s, slideInFromTop 1s ease-out forwards;
+}
+
+.simply-countdown {
+    animation: fadeIn 0.5s ease forwards 2s, slideInFromTop 1s ease-out forwards;
 }
 
 .btn {
