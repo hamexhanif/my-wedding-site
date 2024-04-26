@@ -492,6 +492,23 @@ html, body {
     /* font-weight: bold; */
 }
 
+#disqus_thread {
+    position: relative;
+}
+#disqus_thread:after {
+    content: "";
+    display: block;
+    height: 2em;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgb(255, 247, 234);
+}
+
+.closing {
+    transform: translateY(-30%);
+}
+
 footer {
     padding: 3rem;
     background-color: var(--pink);
@@ -626,6 +643,12 @@ footer .bi-instagram:hover{
         position: absolute;
         max-width: 25%;    
     }
+    #disqus_thread:after {
+        height: 7em;
+    }
+    .closing {
+        transform: translateY(-40%);
+    }
 }
 /* mobile phone */
 @media (max-width: 576px){
@@ -721,6 +744,10 @@ footer .bi-instagram:hover{
     }
     .info .date-style {
         font-size: 2.5rem;
+    }
+
+    #disqus_thread:after {
+        height: 6em;
     }
     .footer {
         font-size: 60% !important;
